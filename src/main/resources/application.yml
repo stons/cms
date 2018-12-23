@@ -10,7 +10,10 @@ spring:
       #none, validate, update, create, create-drop
       ddl-auto: create
     show-sql: true
-
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
   dbunit:
     operationType: CLEAN_INSERT
     sample-file: src/test/resources/sample-data.xml
